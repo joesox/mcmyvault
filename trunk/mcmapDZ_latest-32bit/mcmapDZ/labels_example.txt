@@ -1,0 +1,6 @@
+# mcmapDZ custom labels file
+# Put this in your world directory as 'labels.txt'
+# Format is 'name, x, y, z'
+# eg, 
+# Mountain Village, -872, 84, 545
+# Snow City, 2405, 64, 1183

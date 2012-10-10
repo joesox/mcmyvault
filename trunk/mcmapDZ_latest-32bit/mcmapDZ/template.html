@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Internet Explorer compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" > 
+
+    <script type="text/javascript" src="seadragon-min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
+    <script type="text/javascript" src="maps/maps.js"></script>
+    <script type="text/javascript" src="maps/labels.js"></script>
+
+    <script type="text/javascript">
+    
+      var version = "0.48";
+
+      var mapDir = 'maps/';
+      var currentMapData = null;
+      var viewer = null;
+      var lastPos = null;
+      var lastZoom = null;
+      var currentMap = "day";
+      var lastMap = null;
+      var mapSelect = null;
+      var labelBox = null;
+      var enableLabels = true;
+      
+      var dayXML = null;//DAY_XML
+      var nightXML = null;//NIGHT_XML
+      var caveXML = null;//CAVE_XML
+      var netherXML = null;//NETHER_XML
+      var endXML = null;//END_XML
+      
+      function init() 
+      {
+        viewer = new Seadragon.Viewer("container");
+        viewer.addEventListener("open", addOverlays);
+        viewer.addControl(makeControl(), Seadragon.ControlAnchor.TOP_RIGHT);	
+        viewer.addControl(checkboxControl(), Seadragon.ControlAnchor.TOP_LEFT);	
+        viewer.addControl(coordControl(), Seadragon.ControlAnchor.BOTTOM_LEFT);	
+            
+        // Add events
+        Seadragon.Utils.addEvent(document.getElementById("labelBox"), "change", toggleLabels);
+        Seadragon.Utils.addEvent(document.getElementById("mapSelectControl"), "change", onControlClick);
+        Seadragon.Utils.addEvent(viewer.elmt, "mousemove", updateCoords);
+
+        // Force full screen and remove the full screen button
+        viewer.setFullPage(true);
+        var navControl = viewer.getNavControl(); 
+        navControl.removeChild(navControl.lastChild);
+
+        // Default image
+        //DAY_COMMENTviewer.openDzi(mapDir + "day.xml", dayXML); currentMapData = mapsData.day; currentMap = 'day'; return;
+        //NIGHT_COMMENTviewer.openDzi(mapDir + "night.xml", nightXML); currentMapData = mapsData.night; currentMap = 'night'; return;
+        //CAVE_COMMENTviewer.openDzi(mapDir + "cave.xml", caveXML); currentMapData = mapsData.cave; currentMap = 'cave'; return;
+        //NETHER_COMMENTviewer.openDzi(mapDir + "hell.xml", netherXML); currentMapData = mapsData.hell; currentMap = 'nether'; return;
+        //END_COMMENTviewer.openDzi(mapDir + "end.xml", endXML); currentMapData = mapsData.end; currentMap = 'end'; return;
+        
+      }
+      
+      function addOverlays(viewer) 
+      {
+        if (currentMap != 'nether' && currentMap != 'end')
+        {
+          for (i = 0; i < labelsData.length; i++) { addLabel(viewer, labelsData[i].name,
+                                                                      labelsData[i].x,
+                                                                      labelsData[i].y,
+                                                                      labelsData[i].z); }
+        }
+      }
+      
+      function toggleLabels()
+      {
+          if(enableLabels) { viewer.drawer.clearOverlays(); enableLabels = false; }
+          else { addOverlays(viewer); enableLabels = true; }
+      }
+          
+      function addLabel(viewer, name, x, y, z)
+      {
+        var label = document.createElement('fieldset');
+        label.onclick = function(){zoomToPoint(new Seadragon.Point(point.x,point.y));};
+        
+        var point = new mapToPoint(x, y, z);
+        var placement = Seadragon.OverlayPlacement.BOTTOM;
+        label.innerHTML = '<label id="maplabel"><span unselectable="on">' + name + '</span></label>';
+        viewer.drawer.addOverlay(label, point, placement);
+      }
+      
+      function pointToPixels(x)
+      {
+        return x*currentMapData.width;
+      }
+      
+      function pixelsToPoint(x)
+      {
+        return x/currentMapData.width;
+      }
+      
+      function zoomToPoint(point)
+      {
+          rect = new Seadragon.Rect(point.x-pixelsToPoint(viewer.viewport.getContainerSize().x/2),
+                                    point.y-pixelsToPoint(viewer.viewport.getContainerSize().y/2),
+                                    pixelsToPoint(viewer.viewport.getContainerSize().x),
+                                    pixelsToPoint(viewer.viewport.getContainerSize().y));
+         viewer.viewport.fitBounds(rect);
+         
+        // If we're already zoomed to the right level
+        if(Math.floor(viewer.viewport.getZoom()) == Math.floor(currentMapData.width/viewer.viewport.getContainerSize().x)) { viewer.viewport.panTo(point); }
+      }
+      
+      function mapToPoint(x, y, z)
+      {
+        var imageX = parseInt(currentMapData.originX);
+        var imageY = parseInt(currentMapData.originY);
+        
+        x = parseInt(x);
+        y = parseInt(y);
+        z = parseInt(z);
+        
+        switch(currentMapData.orientation)
+        {
+          case 'East':
+            imageX += (x*2) + (z*2);
+            imageY += z - x;
+            break;
+          case 'West':
+            imageX += -(x*2) - (z*2);
+            imageY += -z + x;
+            break;
+          case 'North':
+            imageX += (x*2) - (z*2);
+            imageY += z + x;
+            break;
+          case 'South':
+            imageX += -(x*2) + (z*2);
+            imageY += -z - x;
+            break;
+        }
+        
+        imageY -= (y*2);
+        imageX = imageX/currentMapData.width;
+        imageY = imageY/currentMapData.width;  
+          
+        return new Seadragon.Point(imageX, imageY);    
+      }
+      
+      function pointToMap(x, y)
+      {
+        
+        x = x*currentMapData.width;
+        y = y*currentMapData.width;
+        
+        x -= currentMapData.originX
+        y -= currentMapData.originY
+        y += 128
+        
+        switch(currentMapData.orientation)
+        {
+          case 'East':
+            mapX = (x-(2*y))/4
+            mapZ = y + mapX
+            break;
+          case 'West':
+            mapX = (-x+(2*y))/4
+            mapZ = -y + mapX
+            break;
+          case 'North':
+            mapX = (x+(2*y))/4
+            mapZ = y - mapX
+            break;
+          case 'South':
+            mapX = (-x-(2*y))/4
+            mapZ = -y - mapX
+            break;
+        }
+        
+        
+        
+          
+        return [Math.round(mapX), 64, Math.round(mapZ)]
+      }
+ 
+
+      function makeControl() 
+      {
+        // Creating the drop down box form
+        mapSelect = document.createElement("select");
+        mapSelect.id = 'mapSelectControl';
+
+        var day = document.createElement("option");
+        var night = document.createElement("option");
+        var cave = document.createElement("option");
+        var nether = document.createElement("option");
+        var end = document.createElement("option");
+
+        day.text = "Day"; night.text = "Night"; cave.text = "Cave"; nether.text = "Nether";	end.text = "The End";
+        //DAY_COMMENTmapSelect.add(day,null); 
+        //NIGHT_COMMENTmapSelect.add(night,null); 
+        //CAVE_COMMENTmapSelect.add(cave,null); 
+        //NETHER_COMMENTmapSelect.add(nether,null);		
+        //END_COMMENTmapSelect.add(end,null);						
+        mapSelect.className = "control";
+
+        return mapSelect;
+      }
+      
+      function checkboxControl() 
+      {
+        // Creating the drop down box form
+        labelBox = document.createElement("fieldset");
+        
+        labelBox.id = 'control';
+        labelBox.innerHTML = '<label id="control"><input type="checkbox" checked=true id="labelBox"/> <span unselectable="on">Show labels</span></label>';
+
+        return labelBox;
+      }
+      
+      function coordControl() 
+      {
+        // Creating the drop down box form
+        coordBox = document.createElement("fieldset");
+        
+        coordBox.id = 'coordBox';
+        coordBox.innerHTML = '<label id="maplabel"><span unselectable="on">' + 'Loading...' + '</span></label>';
+
+        return coordBox;
+      }
+      
+      function updateCoords(event)
+      {
+  
+        var pixel = Seadragon.Utils.getMousePosition(event).minus
+         (Seadragon.Utils.getElementPosition(viewer.elmt));
+       
+        if (!viewer.isOpen()) {
+          return;
+        }
+        
+        
+        var point = viewer.viewport.pointFromPixel(pixel);
+        coords = pointToMap(point.x, point.y)
+        //alert(pointToMap(point.x, point.y))
+        //var xcoord = pointToMap(point.x, point.y)[0];
+       // var zcoord = pointToMap(point.x, point.y)[1];
+       
+        document.getElementById("coordBox").innerHTML = '<label id="maplabel"><span unselectable="on">' + 'X: ' + coords[0] + ', Y: ' + coords[1] + ', Z: ' + coords[2] + '</span></label>';
+      }
+      
+      function switchTo(event, dzi, xmlData) 
+      {
+        if (dzi) 
+        {
+          if (currentMap != "nether" && currentMap != "end")
+          {
+            lastPos = viewer.viewport.getCenter()
+            lastZoom = viewer.viewport.getZoom()
+          }
+          viewer.addEventListener("open", restoreView);
+          viewer.openDzi(dzi, xmlData);
+        } else {
+          viewer.close();
+        }
+
+        // don't let the browser handle the link
+        Seadragon.Utils.cancelEvent(event);   
+      }
+
+      function restoreView(viewer)
+      {
+        viewer.removeEventListener("open", restoreView);
+        if (currentMap != "nether" && lastMap != "nether" && currentMap != "end" && lastMap != "end") { viewer.viewport.zoomTo(lastZoom, false, true); viewer.viewport.panTo(lastPos, true); }
+        lastMap = currentMap;
+      }
+
+      function onControlClick(event) 
+      {
+        Seadragon.Utils.cancelEvent(event);  
+
+        // Check the selected map type and load it
+        switch(mapSelect.options[mapSelect.selectedIndex].text) 
+        {
+          case 'Day':
+            currentMap = "day";
+            currentMapData = mapsData.day;
+            switchTo(event, mapDir + 'day.xml', dayXML);
+            break;
+
+          case 'Night':
+            currentMap = "night"
+            currentMapData = mapsData.night;
+            switchTo(event, mapDir + 'night.xml', nightXML);
+            break;
+
+          case 'Cave':
+            currentMap = "cave"
+            currentMapData = mapsData.cave;
+            switchTo(event, mapDir + 'cave.xml', caveXML);
+            break;
+
+          case 'Nether':
+            currentMap = "nether"
+            currentMapData = mapsData.hell;
+            switchTo(event, mapDir + 'hell.xml', netherXML);
+            break;
+            
+           case 'The End':
+            currentMap = "end"
+            currentMapData = mapsData.end;
+            switchTo(event, mapDir + 'end.xml', endXML);
+            break;
+        }
+      }
+
+      Seadragon.Utils.addEvent(window, "load", init);
+    </script>
+
+    <style type="text/css">
+      #container
+      {
+        width: 500px;
+        height: 400px;
+        background-color: black;
+        border: 1px solid black;
+        color: white;   /* for error messages, etc. */
+      }
+
+      select
+      {
+        margin-right: 5px;
+        margin-top: 5px
+      }
+      
+      fieldset
+      {
+        background-color: rgba(0, 0, 0, 0.6);
+        border: none;
+        border-radius: 2px;
+        color: rgba(240,240,240, 0.7);
+        float: left;
+        font-family: "Segoe UI","Ubuntu Beta",UbuntuBeta,Ubuntu,"Bitstream Vera Sans","DejaVu Sans",Tahoma,Helvetica,sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        margin: 5px;
+        padding: 2px;
+        padding-left: 4px;
+        padding-right: 4px;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+      }
+      
+      fieldset:hover
+      {
+        color: rgb(240,240,240);
+        cursor: pointer;
+      }
+      
+      label
+      {
+        white-space: nowrap;
+      }
+      
+      label#maplabel
+      {
+        cursor: pointer;
+      }
+      
+      label#control 
+      {
+        display: block;
+        float: left;
+        padding-right: 3px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        cursor: pointer;
+      }
+      
+      input 
+      {
+        vertical-align: middle;
+      }
+
+      label#control span
+      {
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+  </body>
+</html>
