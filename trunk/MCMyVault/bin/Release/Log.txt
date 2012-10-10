@@ -1,0 +1,1 @@
+10/8/2012 10:15:58 PM, IsDefaultFolder: Directory.Exists: C:\Users\Joe\AppData\Roaming\.minecraft\saves
