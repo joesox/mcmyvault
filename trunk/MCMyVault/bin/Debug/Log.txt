@@ -1,0 +1,42 @@
+10/9/2012 7:52:38 PM, InitIniSettings: looking for C:\Program Files (x86)\Minecraft
+10/9/2012 8:06:48 PM, InitIniSettings: looking for C:\Program Files (x86)\Minecraft
+10/9/2012 8:06:57 PM, IsDefaultFolder: Directory.Exists: C:\Users\Joe\AppData\Roaming\.minecraft\saves
+10/9/2012 8:10:14 PM, InitIniSettings: looking for C:\Program Files (x86)\Minecraft
+10/9/2012 8:10:32 PM, IsDefaultFolder: Directory.Exists: C:\Users\Joe\AppData\Roaming\.minecraft\saves
+10/9/2012 8:11:33 PM, InitIniSettings: looking for C:\Program Files (x86)\Minecraft
+10/9/2012 8:11:46 PM, IsDefaultFolder: Directory.Exists: C:\Users\Joe\AppData\Roaming\.minecraft\saves
+10/9/2012 8:11:53 PM, Auto-mcmapDZ executing: mcmapDZ -day -night -cave -skylight -extension jpg -quality 1 -orientation E "C:\Users\Joe\AppData\Roaming\.minecraft\saves\blan"
+10/9/2012 8:12:32 PM, Auto-mcmapDZ executing: mcmapDZ -day -night -cave -skylight -extension jpg -quality 1 -orientation E "C:\Users\Joe\AppData\Roaming\.minecraft\saves\cybertron"
+10/9/2012 8:13:02 PM, Auto-mcmapDZ executing: mcmapDZ -day -night -cave -skylight -extension jpg -quality 1 -orientation E "C:\Users\Joe\AppData\Roaming\.minecraft\saves\goldenman-Awesome_castle"
+10/9/2012 8:13:29 PM, Auto-mcmapDZ executing: mcmapDZ -day -night -cave -skylight -extension jpg -quality 1 -orientation E "C:\Users\Joe\AppData\Roaming\.minecraft\saves\JoesNewWorld"
+10/9/2012 8:14:02 PM, Auto-mcmapDZ executing: mcmapDZ -day -night -cave -skylight -extension jpg -quality 1 -orientation E "C:\Users\Joe\AppData\Roaming\.minecraft\saves\kings landing"
+10/9/2012 8:16:48 PM, InitIniSettings: looking for C:\Program Files (x86)\Minecraft
+10/9/2012 8:17:01 PM, IsDefaultFolder: Directory.Exists: C:\Users\Joe\AppData\Roaming\.minecraft\saves
+10/9/2012 8:17:42 PM, Auto-mcmapDZ executing: mcmapDZ -day -night -cave -skylight -extension jpg -quality 1 -orientation E "C:\Users\Joe\AppData\Roaming\.minecraft\saves\blan"
+10/9/2012 8:18:18 PM, Auto-mcmapDZ executing: mcmapDZ -day -night -cave -skylight -extension jpg -quality 1 -orientation E "C:\Users\Joe\AppData\Roaming\.minecraft\saves\cybertron"
+10/9/2012 8:18:48 PM, Auto-mcmapDZ executing: mcmapDZ -day -night -cave -skylight -extension jpg -quality 1 -orientation E "C:\Users\Joe\AppData\Roaming\.minecraft\saves\goldenman-Awesome_castle"
+10/9/2012 8:19:14 PM, Auto-mcmapDZ executing: mcmapDZ -day -night -cave -skylight -extension jpg -quality 1 -orientation E "C:\Users\Joe\AppData\Roaming\.minecraft\saves\JoesNewWorld"
+10/9/2012 8:19:46 PM, Auto-mcmapDZ executing: mcmapDZ -day -night -cave -skylight -extension jpg -quality 1 -orientation E "C:\Users\Joe\AppData\Roaming\.minecraft\saves\kings landing"
+10/9/2012 9:44:53 PM, DoBackup(): C:\Users\Joe\Documents\minecraft tools\backups\blan_10092012214451.zip
+10/9/2012 9:54:32 PM, DoViewEihort command: C:\Users\Joe\Documents\minecraft tools\eihort-0.3.11-win64\eihort.exe "C:\Users\Joe\AppData\Roaming\.minecraft\saves\blan"
+10/9/2012 9:58:32 PM, DoViewEihort command: C:\Users\Joe\Documents\minecraft tools\eihort-0.3.11-win64\eihort.exe "C:\Users\Joe\AppData\Roaming\.minecraft\saves\blan"
+10/9/2012 10:07:34 PM, DoViewEihort command: C:\Users\Joe\Documents\minecraft tools\eihort-0.3.11-win64\eihort.exe "C:\Users\Joe\AppData\Roaming\.minecraft\saves\blan"
+10/9/2012 10:20:57 PM, DoViewEihort command: C:\Users\Joe\Documents\minecraft tools\eihort-0.3.11-win64\eihort.exe "C:\Users\Joe\AppData\Roaming\.minecraft\saves\blan"
+10/9/2012 10:33:52 PM, DoBackup(): C:\Users\Joe\Documents\minecraft tools\backups\blan_10092012223350.zip
+10/9/2012 10:33:56 PM, WARNING: Nothing selected to rename. OR more than one item selected.
+10/9/2012 10:38:15 PM, DoViewEihort command: C:\Users\Joe\Documents\minecraft tools\eihort-0.3.11-win64\eihort.exe "C:\Users\Joe\AppData\Roaming\.minecraft\saves\blan"
+10/9/2012 11:05:01 PM, DoBackup(): C:\Users\Joe\Documents\minecraft tools\backups\blan_10092012230459.zip
+10/9/2012 11:12:02 PM, DoViewEihort command: C:\Users\Joe\Documents\minecraft tools\eihort-0.3.11-win64\eihort.exe "C:\Users\Joe\AppData\Roaming\.minecraft\saves\blan"
+10/9/2012 11:31:45 PM, DoBackup(): C:\Users\Joe\Documents\minecraft tools\backups\blan_10092012233142.zip
+10/9/2012 11:55:35 PM, DoBackup(): C:\Users\Joe\Documents\minecraft tools\backups\blan_10092012235533.zip
+10/10/2012 4:03:53 PM, restoreSelectedBackupFileToolStripMenuItem_Click: could not find C:\Users\Joe\AppData\Roaming\.minecraft\saves\JoesNewWorld
+10/10/2012 4:06:38 PM, DoViewEihort command: C:\Users\Joe\Documents\minecraft tools\eihort-0.3.11-win64\eihort.exe "C:\Users\Joe\AppData\Roaming\.minecraft\saves\JoesNewWorld"
+10/10/2012 4:08:58 PM, DoBackup(): C:\Users\Joe\Documents\minecraft tools\backups\goldenman-Awesome_castle_10102012160857.zip
+10/10/2012 6:29:21 PM, DoViewEihort command: C:\Users\Joe\Documents\minecraft tools\eihort-0.3.11-win64\eihort.exe "C:\Users\Joe\AppData\Roaming\.minecraft\saves\goldenman-Awesome_castle"
+10/10/2012 6:30:52 PM, DoViewEihort command: C:\Users\Joe\Documents\minecraft tools\eihort-0.3.11-win64\eihort.exe "C:\Users\Joe\Documents\minecraft tools\backups\blan_10092012223350-foundredstone"
+10/10/2012 6:32:30 PM, DoViewEihort command: C:\Users\Joe\Documents\minecraft tools\eihort-0.3.11-win64\eihort.exe "C:\Users\Joe\Documents\minecraft tools\backups\cybertron_10072012234126"
+10/10/2012 6:41:37 PM, DoViewEihort command: C:\Users\Joe\Documents\minecraft tools\eihort-0.3.11-win64\eihort.exe "C:\Users\Joe\AppData\Roaming\.minecraft\saves\blan"
+10/10/2012 6:49:21 PM, DoViewEihort command: C:\Users\Joe\Documents\minecraft tools\eihort-0.3.11-win64\eihort.exe "C:\Users\Joe\AppData\Roaming\.minecraft\saves\blan"
+10/10/2012 7:05:54 PM, DoViewEihort command: C:\Users\Joe\Documents\minecraft tools\eihort-0.3.11-win64\eihort.exe "C:\Users\Joe\AppData\Roaming\.minecraft\saves\blan"
+10/10/2012 7:18:28 PM, DoBackup(): C:\Users\Joe\Documents\minecraft tools\backups\blan_10102012191826.zip
+10/10/2012 7:42:37 PM, DoBackup(): C:\Users\Joe\Documents\minecraft tools\backups\blan_10102012194236.zip
