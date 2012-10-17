@@ -1,0 +1,2 @@
+10/8/2012 10:15:58 PM, IsDefaultFolder: Directory.Exists: C:\Users\Joe\AppData\Roaming\.minecraft\saves
+10/10/2012 9:30:44 PM, InitIniSettings: looking for C:\Program Files (x86)\Minecraft
