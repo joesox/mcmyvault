@@ -1,6 +1,6 @@
 #labels Featured
 {{{
-// MCMyVault v1.7.0.0
+// MCMyVault v1.7.1.0
 // by JPSIII
 // Copyright 2012. All Rights Reserved
 // YOU CAN DOWNLOAD mcmapDZ here: 
