@@ -1,6 +1,6 @@
 #labels Featured
 {{{
-// MCMyVault v1.8.0.0
+// MCMyVault v1.10.0.0
 // by JPSIII
 // Copyright 2012. All Rights Reserved
 // YOU CAN DOWNLOAD mcmapDZ here: 
@@ -54,6 +54,7 @@ name_col_width: MCMyVault will handle
 filename_col_width: MCMyVault will handle
 map_col_width: MCMyVault will handle
 debug: true  <set to 'true' for additional log entries>
+cleanupdays: <number of days to keep the oldest backup for each day in that period and send the rest to recyclebin>
 
 [myapps]
 myappname = <FULLFILENAMEPATH>
@@ -78,7 +79,7 @@ folders are in the correct location in the .minecraft\saved\<mapname>\ folder.
 ****************************
 ***    Testing Notes     ***
 ****************************
-Tested with Minecraft 1.3.2 ; 1.4.2
+Tested with Minecraft 1.3.2 ; 1.4.2; 1.4.4
 Tested on Windows 7 64bit
 Tested on Windows XP 32bit
 
