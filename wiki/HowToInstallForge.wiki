@@ -1,12 +1,12 @@
-
 = HOW TO INSTALL MINECRAFT FORGE ON WINDOWS =
 
 These instructions work for Minecraft version 1.5.1
 
 *PREREQUISITE:* download and install http://www.7-zip.org/
 this program is to open the minecraft.jar file to mod it
-(*** If you have a new computer from 2010 or later you will probably want the 64bit installation
-check your OS if 64 bit ***)
+
+(If you have a new computer from 2010 or later you will probably want the 64bit installation
+check your OS if 64 bit)
 
 == FIRST STEP: ==
 
@@ -16,7 +16,10 @@ a new window should have opened showing some folders named "paulscode" etc, plac
 
 == FINAL STEP: ==
 
-  # Open a new Windows Explorer, and navigate to C:\Users\<YOURWINDOWSUSERNAME>\AppData\Roaming\.minecraft\bin\
+  # Open a new Windows Explorer, and navigate to 
+{{{
+C:\Users\<YOURWINDOWSUSERNAME>\AppData\Roaming\.minecraft\bin\
+}}}
   # Right-click on "minecraft" or "minecraft.jar" and choose "7-Zip" then "Open Archive"
 a new window should have opened showing some folders named "achievement" etc, place that off to the other side so they are side-by-side.
   # In "minecraft.jar", right-click, DELETE the "META-INF" folder *** MUST BE DONE FIRST *** (press ok to confirm)
@@ -27,5 +30,5 @@ a new window should have opened showing some folders named "achievement" etc, pl
 It is successfully installed if you see a "FML is setting up your minecraft" message while logging in.
 
 = TROUBLESHOOTING: =
-TIP1: If you get stuck in a "Done loading" screen, close Minecraft; delete the '\AppData\Roaming\.minecraft\bin\' folder and start minecraft.exe again.
-TIP2: After seeing the "FML is setting up your minecraft", if it sits at a blank screen, delete all your previous mods and try again.
+  * TIP1: If you get stuck in a "Done loading" screen, close Minecraft; delete the '\AppData\Roaming\.minecraft\bin\' folder and start minecraft.exe again.
+  * TIP2: After seeing the "FML is setting up your minecraft", if it sits at a blank screen, delete all your previous mods and try again.
