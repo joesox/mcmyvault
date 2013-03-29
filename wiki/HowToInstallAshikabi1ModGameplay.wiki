@@ -6,18 +6,18 @@
 Here is my current mods for Ashikabi1 gameplay for MC1.5.1. 
 Install by using the steps below.
 
-INCLUDED MODS:
+INCLUDED MODS (recipe doc):
   [1.5.1]ReiMinimap_v3.3_04
-  ComputerCraft1.52
-  Flans Mod 2.2 
-  Flans Mod Modern Weapons Pack
-  Flans Mod Nerf Pack 1.1 for Flans Mod 2.2
+  ComputerCraft1.52 (http://computercraft.info/wiki/Recipes)
+  Flans Mod 2.2 (http://www.9minecraft.net/flans-mod)
+  Flans Mod Modern Weapons Pack (http://www.9minecraft.net/flans-modern-weapons-pack-mod)
+  Flans Mod Nerf Pack 1.1 for Flans Mod 2.2 (http://www.9minecraft.net/flans-nerf-pack-mod)
   HealthBars 1.0 for MC 1.5.1
   minecraftforge-universal-1.5.1-7.7.1.611
-  Minions_1.5.1
+  Minions_1.5.1 (press M for 4 evil deeds, then mine with staff)
   OptiFine_1.5.1_HD_B1
-  Ruins_1.5.1
-  TreeCapicitor
+  Ruins_1.5.1 (modify mods\ruins.txt to your liking)
+  TreeCapicitor (life is so much easier)
 
 
 **************************************************************
