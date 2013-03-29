@@ -1,8 +1,8 @@
 #labels Featured
 {{{
-// MCMyVault v1.10.0.0
+// MCMyVault v1.5.1.5
 // by JPSIII
-// Copyright 2012. All Rights Reserved
+// Copyright 2012-2013. All Rights Reserved
 // YOU CAN DOWNLOAD mcmapDZ here: 
 // http://www.minecraftforum.net/topic/253696-mcmapdz-048-%C2%B7-simple-lightning-fast-interactive-web-maps/
 // YOU CAN DOWNLOAD eihort here: 
@@ -44,10 +44,11 @@ minecraft: <fullpath to minecraft.exe>
 minecraft_server: <fullpath to Minecraft_Server.exe>
 minecraft_saved: Will be auto detected; typically 'C:\Users\<USERAME>\AppData\Roaming\.minecraft\saves'
 mcmapDZ_renders: <fullpath to mcmapDZ\renders folder>
-backup_loc:<fullpath to whereyou want the backups stored>
+backup_loc:<fullpath to where you want the backups stored>
 eihort:<fullpath toeihort.exe>
 backup_loc_textpacks=typically 'C:\Users\<USERAME>\Documents\MCMyVault\backups-texturepacks'
 minecraft_textpacks=typically 'C:\Users\<USERAME>\AppData\Roaming\.minecraft\texturepacks'
+snapshots_loc:<fullpath to where you want the snapshots stored>
 cloud_backup_loc: example: C:\Users\<USERAME>\Documents\Dropbox\mc_backups
 lastbackup_col_width: MCMyVault will handle
 name_col_width: MCMyVault will handle
@@ -79,7 +80,7 @@ folders are in the correct location in the .minecraft\saved\<mapname>\ folder.
 ****************************
 ***    Testing Notes     ***
 ****************************
-Tested with Minecraft 1.3.2 ; 1.4.2; 1.4.4
+Tested with Minecraft 1.5.1
 Tested on Windows 7 64bit
 Tested on Windows XP 32bit
 
