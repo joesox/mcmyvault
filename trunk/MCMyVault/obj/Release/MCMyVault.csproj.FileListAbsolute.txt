@@ -1,0 +1,38 @@
+C:\Users\Joe\documents\visual studio 2010\Projects\MineCraft MyVault\MCMyVault\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Joe\documents\visual studio 2010\Projects\MineCraft MyVault\MCMyVault\obj\Release\MCMyVault.AboutBox1.resources
+C:\Users\Joe\documents\visual studio 2010\Projects\MineCraft MyVault\MCMyVault\obj\Release\MCMyVault.Form1.resources
+C:\Users\Joe\documents\visual studio 2010\Projects\MineCraft MyVault\MCMyVault\obj\Release\MCMyVault.RenameForm.resources
+C:\Users\Joe\documents\visual studio 2010\Projects\MineCraft MyVault\MCMyVault\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Joe\documents\visual studio 2010\Projects\MineCraft MyVault\MCMyVault\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Joe\documents\visual studio 2010\Projects\MineCraft MyVault\MCMyVault\bin\Release\MCMyVault.exe.config
+C:\Users\Joe\documents\visual studio 2010\Projects\MineCraft MyVault\MCMyVault\bin\Release\MCMyVault.exe
+C:\Users\Joe\documents\visual studio 2010\Projects\MineCraft MyVault\MCMyVault\bin\Release\MCMyVault.pdb
+C:\Users\Joe\documents\visual studio 2010\Projects\MineCraft MyVault\MCMyVault\bin\Release\Ionic.Zip.dll
+C:\Users\Joe\documents\visual studio 2010\Projects\MineCraft MyVault\MCMyVault\obj\Release\MCMyVault.Properties.Resources.resources
+C:\Users\Joe\documents\visual studio 2010\Projects\MineCraft MyVault\MCMyVault\obj\Release\MCMyVault.exe
+C:\Users\Joe\documents\visual studio 2010\Projects\MineCraft MyVault\MCMyVault\obj\Release\MCMyVault.pdb
+C:\Users\Joe\Documents\Visual Studio 2010\Projects\MCMyVault\MCMyVault\bin\Release\MCMyVault.exe.config
+C:\Users\Joe\Documents\Visual Studio 2010\Projects\MCMyVault\MCMyVault\obj\Release\MCMyVault.exe
+C:\Users\Joe\Documents\Visual Studio 2010\Projects\MCMyVault\MCMyVault\obj\Release\MCMyVault.pdb
+C:\Users\Joe\Documents\Visual Studio 2010\Projects\MCMyVault\MCMyVault\bin\Release\MCMyVault.exe
+C:\Users\Joe\Documents\Visual Studio 2010\Projects\MCMyVault\MCMyVault\bin\Release\MCMyVault.pdb
+C:\Users\Joe\Documents\Visual Studio 2010\Projects\MCMyVault\MCMyVault\bin\Release\Ionic.Zip.dll
+C:\Users\Joe\Documents\Visual Studio 2010\Projects\MCMyVault\MCMyVault\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Joe\Documents\Visual Studio 2010\Projects\MCMyVault\MCMyVault\obj\Release\MCMyVault.AboutBox1.resources
+C:\Users\Joe\Documents\Visual Studio 2010\Projects\MCMyVault\MCMyVault\obj\Release\MCMyVault.Form1.resources
+C:\Users\Joe\Documents\Visual Studio 2010\Projects\MCMyVault\MCMyVault\obj\Release\MCMyVault.Properties.Resources.resources
+C:\Users\Joe\Documents\Visual Studio 2010\Projects\MCMyVault\MCMyVault\obj\Release\MCMyVault.RenameForm.resources
+C:\Users\Joe\Documents\Visual Studio 2010\Projects\MCMyVault\MCMyVault\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Joe\Documents\Visual Studio 2010\Projects\MCMyVault\MCMyVault\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\bin\Release\MCMyVault.exe.config
+C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\obj\Release\MCMyVault.exe
+C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\obj\Release\MCMyVault.pdb
+C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\bin\Release\MCMyVault.exe
+C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\bin\Release\MCMyVault.pdb
+C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\obj\Release\MCMyVault.csprojResolveAssemblyReference.cache
+C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\obj\Release\MCMyVault.AboutBox1.resources
+C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\obj\Release\MCMyVault.Form1.resources
+C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\obj\Release\MCMyVault.Properties.Resources.resources
+C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\obj\Release\MCMyVault.RenameForm.resources
+C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\obj\Release\MCMyVault.csproj.GenerateResource.Cache
+C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\bin\Release\Ionic.Zip.dll
