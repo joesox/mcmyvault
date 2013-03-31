@@ -1,13 +1,13 @@
 #labels Featured
 {{{
 **************************************************************
-*** Ashikabi1's Minecraft Mod Set
+*** Ashikabi1's Minecraft Mod Set version 1.5.1.1
 **************************************************************
 Here is my current mods for Ashikabi1 gameplay for MC1.5.1. 
 Install by using the steps below.
 
 INCLUDED MODS (recipe doc):
-  [1.5.1]ReiMinimap_v3.3_04
+  [1.5.1]ReiMinimap_v3.3_04 (press L for Menu)
   ComputerCraft1.52 (http://computercraft.info/wiki/Recipes)
   Flans Mod 2.2 (http://www.9minecraft.net/flans-mod)
   Flans Mod Modern Weapons Pack (http://www.9minecraft.net/flans-modern-weapons-pack-mod)
@@ -18,18 +18,18 @@ INCLUDED MODS (recipe doc):
   OptiFine_1.5.1_HD_B1
   Ruins_1.5.1 (modify mods\ruins.txt to your liking)
   TreeCapicitor (life is so much easier)
-
+  More Swords (http://www.minecraftforum.net/topic/1138477-151-forge-universal-more-swords-mod-official-content-update)
 
 **************************************************************
 *** HOW TO INSTALL MINECRAFT FORGE WITH HD SUPPORT FOR START
 **************************************************************
-FIRST: Delete your existing .minecraft (back it up first!) "C:\Users\<USERNAME>\AppData\Roaming\.minecraft"
-then download 1.5.1-mccustominstall.zip and extract to a temporary location.
+FIRST: Delete your existing .minecraft (back it up first using MCMyVault snapshot feature!) "C:\Users\<USERNAME>\AppData\Roaming\.minecraft"
+(NOTE: You might be able to run this without deleting your world. I haven't tested it yet. Uninstalling ashikabi1modsetup.exe using its uninstaller should remove the mods it installed.)
 
 1) Download and run Minecraft.exe, after title screen appears, press 'Quit Game' button. 
 http://minecraft.net/download
-2) Run mcpatcher-3.x.x.exe from the 1.5.1-mccustominstall folder .
-3) Uncheckmark all mods shown in mcpatcher.
+2) Download ashikabi1modsetup.exe and run it. Leave everything checkmarked.
+3) mcpatcher will start and Uncheckmark all mods shown in mcpatcher.
 4) Mods->Add (or + button) and select the 
 "1.5.1-mccustominstall\patches\minecraftforge-universal-1.5.xxxx.zip" to open
 5) Make sure top level is selected and click OK.
@@ -41,22 +41,7 @@ and select the "\patches\OptiFine_1.x.x_HD_B1.zip" to open
 10) A Conflict will be detected but press Yes to "Only the files from OptiFine_1.5.1_HD_B1 will be used."
 11) Press "Test Minecraft" button and Forge should load and OptiFine showing installed.
 
-Stopping here is fine and would leave you with the basic Forge install with OptiFine HD support. 
-But proceed for the Ashikabi1 mod gameplay.
-
-12) Mods->Add (or + button) and select the "[1.5.x]ReiMinimap_v3.x.zip" file to open and Make sure top level 
-is selected and click OK.
-13) Press the 'Patch" button
-14) Follow steps 8 thru 11 for "ComputerCraft1.x.zip" and each mod-patch you want to install.
-
-After installing the minecraft.jar patches, lets install the mods 
-(these files could not be handled by mcpatcher)...
-1) Copy all the zip files in "1.5.1-mccustominstall\mods" to "C:\Users\<USERNAME>\AppData\Roaming\.minecraft"
-2) Right-click on the first mod .zip file you copied and execute: 7-Zip->Extract Here 
-(if prompted to replace anything click Yes to all)
-3) Delete the zip file you just extracted.
-4) perform steps 2 and 3 until all mod files are extracted and deleted.
-4) open minecraft cnd check to see if all mods loaded by the Forge ModLoader.
+FINISHED. GO PLAY!
 
 **************************************************************
 *** TEXTUREPACKS
