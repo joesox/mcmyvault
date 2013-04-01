@@ -38,8 +38,12 @@ http://minecraft.net/download
 8) Time to install the 'OptiFine HD standard' for better HD texture support; Mods->Add (or + button) 
 and select the "\patches\OptiFine_1.x.x_HD_B1.zip" to open
 9) Make sure top level is selected and click OK.
-10) A Conflict will be detected but press Yes to "Only the files from OptiFine_1.5.1_HD_B1 will be used."
-11) Press "Test Minecraft" button and Forge should load and OptiFine showing installed.
+10) Mods->Add (or + button) and select the 
+"[1.5.1]ReiMinimap.xxxx.zip" to open
+11) Make sure top level is selected and click OK.
+12) Press the 'Patch" button.
+13) A Conflict will be detected but press Yes to "Only the files from OptiFine_1.5.1_HD_B1 will be used."
+14) Press "Test Minecraft" button and Forge should load and OptiFine showing installed.
 
 FINISHED. GO PLAY!
 
