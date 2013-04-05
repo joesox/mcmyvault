@@ -1,7 +1,7 @@
 #labels Featured
 {{{
 **************************************************************
-*** Ashikabi1's Minecraft Mod Set version 1.5.1.1
+*** Ashikabi1's Minecraft Mod Set version 1.5.1.2
 **************************************************************
 Here is my current mods for Ashikabi1 gameplay for MC1.5.1. 
 Install by using the steps below.
@@ -19,6 +19,9 @@ INCLUDED MODS (recipe doc):
   Ruins_1.5.1 (modify mods\ruins.txt to your liking)
   TreeCapicitor (life is so much easier)
   More Swords (http://www.minecraftforum.net/topic/1138477-151-forge-universal-more-swords-mod-official-content-update)
+
+USE RECIPSE HELPFILE @ C:\Users\[USERBNAME]\AppData\Roaming\.minecraft\mods\recipe-help.chm"
+FOR HELP WITH THESE MOD's RECIPES!!!!!!!
 
 **************************************************************
 *** HOW TO INSTALL MINECRAFT FORGE WITH HD SUPPORT FOR START
