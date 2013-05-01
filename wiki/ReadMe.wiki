@@ -1,6 +1,6 @@
 #labels Featured
 {{{
-// MCMyVault v1.5.1.5
+// MCMyVault v1.5.1.9
 // by JPSIII
 // Copyright 2012-2013. All Rights Reserved
 // YOU CAN DOWNLOAD mcmapDZ here: 
@@ -33,6 +33,11 @@ other.
 The host PC It needs the .NET 4.0 Runtime
 http://www.microsoft.com/en-us/download/details.aspx?id=17718
 
+Starting with v1.5.1.9, Windows non-administrator & administrator accounts, 
+MCMyVault default install path is
+c:\Users\<USERNAME>\AppData\Local\MCMyVault
+(change this path during installation to configure for any additional launchers like Tekkit etc.)
+Non-administrators can install v1.5.1.9+
 ****************************
 ***     config.ini       ***
 ****************************
@@ -92,6 +97,11 @@ Tested 'Send copy to cloud storage' feature with Dropbox and Google Drive
 ERROR: "Eihort Fatal Error: Failed to locate terrain/moon_phases.png"
 RESOLUTION:
 You may not have run Minecraft.exe yet on this computer; close MCMyVault and run Minecraft.exe and login; select Yes to download updates, then exit and run MCMyVault again
+***
+"Show Hidden Files" setting may need to be enabled on your Windows 
+computer before running.
+***
+
 ***
 "Show Hidden Files" setting may need to be enabled on your Windows 
 computer before running.
