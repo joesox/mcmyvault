@@ -1,5 +1,5 @@
-#summary One-sentence summary of this page.
 #labels Featured
+#Installation Demo of MCMyVault + How To Use MCMyVault 4 Tekkit
 
 = Installation Demo of MCMyVault + How To Use MCMyVault 4 Tekkit =
 
