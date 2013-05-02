@@ -1,0 +1,6 @@
+#summary One-sentence summary of this page.
+#labels Featured
+
+= Installation Demo of MCMyVault + How To Use MCMyVault 4 Tekkit =
+
+<wiki:video url="http://youtu.be/IxUGzYJPS84"/>
