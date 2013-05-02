@@ -1,6 +1,4 @@
 #labels Featured
-#Installation Demo of MCMyVault + How To Use MCMyVault 4 Tekkit
-
 = Installation Demo of MCMyVault + How To Use MCMyVault 4 Tekkit =
 
 <wiki:video width="420" height="315" url="http://www.youtube.com/watch?v=IxUGzYJPS84"/>
