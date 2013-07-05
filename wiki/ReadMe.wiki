@@ -1,6 +1,6 @@
 #labels Featured
 {{{
-// MCMyVault v1.5.1.9
+// MCMyVault v1.6.1.1
 // by JPSIII
 // Copyright 2012-2013. All Rights Reserved
 // YOU CAN DOWNLOAD mcmapDZ here: 
@@ -36,7 +36,8 @@ http://www.microsoft.com/en-us/download/details.aspx?id=17718
 Starting with v1.5.1.9, Windows non-administrator & administrator accounts, 
 MCMyVault default install path is
 c:\Users\<USERNAME>\AppData\Local\MCMyVault
-(change this path during installation to configure for any additional launchers like Tekkit etc.)
+[NOTE: v1.6.1.x+ Now stores all settings files in this local so multiple installations 
+to configure for any additional launchers like Tekkit etc. are no longer needed.]
 Non-administrators can install v1.5.1.9+
 ****************************
 ***     config.ini       ***
@@ -70,6 +71,12 @@ creating a shortcut, then pointing to the shortcut itself. For Example:
 minecraft_tools= C:\Users\<USERAME>\Documents\minecraft tools\minecraft tools.lnk
 RedstoneSimulator=C:\Users\<USERAME>\Documents\minecraft tools\RedstoneSimulator.url
 
+***********************************
+***     startupconfig.ini       ***
+***********************************
+currentconfig: Tell MCMyVault what config to load at startup. Each profile will have its own ini file settings.
+The default is 'config.ini'
+
 ****************************
 ***    Backup Files      ***
 ****************************
@@ -102,8 +109,4 @@ You may not have run Minecraft.exe yet on this computer; close MCMyVault and run
 computer before running.
 ***
 
-***
-"Show Hidden Files" setting may need to be enabled on your Windows 
-computer before running.
-***
 }}}
