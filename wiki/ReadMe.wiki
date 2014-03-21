@@ -1,6 +1,6 @@
 #labels Featured
 {{{
-// MCMyVault v1.7.4.1
+// MCMyVault v1.7.5.1
 // by JPSIII
 // Copyright 2012-2014. All Rights Reserved
 // YOU CAN DOWNLOAD mcmap2 here:
@@ -47,7 +47,6 @@ config.ini.
 *** SECTIONS AND KEYS ***
 [settings]
 minecraft: <fullpath to minecraft.exe>
-minecraft_server: <fullpath to Minecraft_Server.exe>
 minecraft_saved: Will be auto detected; typically 'C:\Users\<USERAME>\AppData\Roaming\.minecraft\saves'
 mcmapDZ_renders: <fullpath to mcmap2 folder>
 backup_loc:<fullpath to where you want the backups stored>
@@ -92,7 +91,7 @@ folders are in the correct location in the .minecraft\saved\<mapname>\ folder.
 ****************************
 ***    Testing Notes     ***
 ****************************
-Tested with Minecraft 1.7.4
+Tested with Minecraft 1.7.5
 Tested with Minecraft 1.6.4
 Tested on Windows 7 64bit
 Tested on Windows 8.1 Pro N
@@ -119,4 +118,5 @@ Please check your Settings tab and validate each location path. Click Save butto
 "Show Hidden Files" setting may need to be enabled on your Windows 
 computer before running.
 ***
+
 }}}
