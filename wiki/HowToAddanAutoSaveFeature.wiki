@@ -1,0 +1,21 @@
+#labels Featured
+= Introduction =
+
+Decision has been made not to add an auto-save feature built into MCMyVault mainly because there are so many good programs out there that perform Minecraft auto-saves. So we'll just go with a recommended auto-save program that works well with MCMyVault; 
+
+Recommended auto-save program: MCSave
+http://www.minecraftforum.net/topic/1281193-mcsave-powerful-lightweight-multiple-save-utility/
+
+= HOW TO SETUP =
+
+  # Download MCSave from the link above and store at your favorite Minecraft tools folder.
+  # Open MCMyvault and add MCSave as a favorite program in the MyApps tab.
+  # Click on the MCSave to execute and you will need to set it up for your current Minecraft environment. Here is an example of a Technicpack.net 'Attack of the B-Team' environment below.
+  # MCSave will start auto saving if you configured MCSave properly.
+http://farm4.staticflickr.com/3685/13311756573_d18edb18e0.jpg
+
+= HOW IT WORKS =
+
+MCSave creates its files in (your minecraft path)\saves\WORLDNAME\MCSave
+This folder is included in MCMyVault backups and snapshots.
+Use MCSave to revert to your last auto-save, which should be a newer restore than any of your MCMyVault backups. Then you can make a MCMyVault backup after restoring from a MCSave. It is recommended to use snapshots in the beginning of your first use with MCSave just as a precautionary measure.
