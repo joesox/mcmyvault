@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>mc_mv.ico</ApplicationIcon>
+    <ApplicationIcon>mcmv_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ionic.Zip">
@@ -151,6 +151,7 @@
     <None Include="Archive.ico" />
     <None Include="clean-up.ico" />
     <None Include="cloud hd.ico" />
+    <Content Include="mcmv_icon.ico" />
     <Content Include="mc_mv.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

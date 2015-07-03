@@ -1,6 +1,6 @@
-// MCMyVault v1.7.5.1
+// MCMyVault v1.8.7.0
 // by JPSIII
-// Copyright 2012-2014. All Rights Reserved
+// Copyright 2012-2015. All Rights Reserved
 // YOU CAN DOWNLOAD mcmap2 here:
 // http://wrim.pl/mcmap/
 // YOU CAN DOWNLOAD eihort here: 

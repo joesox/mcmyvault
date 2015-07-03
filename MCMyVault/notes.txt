@@ -6,6 +6,7 @@ C:\Users\Joe\Documents\MCMyVault\backups
 C:\Users\Joe\Documents\MCMyVault\backups-texturepacks
 C:\Users\Joe\Documents\MCMyVault\mcmap2
 C:\Users\Joe\Documents\MCMyVault\snapshots
+C:\Users\Joe\Documents\MCMyVault\mcmapDZ\renders
 
 2) In Visual Studio, perform a Release build.
 3) In InnoSetup, update the MyAppVersion and any other new directories needed when creating MCMyVault directory
@@ -13,13 +14,14 @@ Update ReadMe.txt file
 4) Compile the setup file and rename the exe to MCMyVaultsetup1_5_1_x.exe
 5) Open recyclebin and restore all files
 BETA TEST THE RELEASE BUILD NOW (test WinXP on WD80GB in Virtual PC)!!! 1) Upgrade 2) New install
-6a) Upload release build to public dropbox [Googlecode has no more new downloads]
-6b) Open HashMyFiles and grab the MD5 and SHA1 and then Delete the old download on mcmyvault.googlecode.com 
+6a) Upload release build to public dropbox [GitHub has no more new downloads]
+6b) Open HashMyFiles and grab the MD5 and SHA1 and then Delete the old download on mcmyvault.GitHub.com 
 DOWNLOAD HERE:version1.7.5.1-DropBox MD5: 19d57a93efb632ab85053916a35da97d SHA1: 8d77f737597f6a654b629b51fc11a8437785c666
+DOWNLOAD HERE:version1.8.7.0-DropBox MD5: ed899611c28a8d08d7ce4130efd75219 SHA1: fdbc60331bea70c698aa11eed73b37c449c41b57
 7) paste in the new download; copy the new release notes in NotePad2
-8) Update the googlecode homepage if any new features
-9) Update the googlecode Issues
-10) Update the googlecode ReadMe.txt
+8) Update the GitHub homepage if any new features
+9) Update the GitHub Issues
+10) Update the GitHub ReadMe.txt
 11) Update info at http://www.minecraftwiki.net/wiki/Programs_and_editors/Backup_utilities
 12) Next update the official mcmyvault minecraft forum post http://www.minecraftforum.net/topic/1517853-mcmyvault-backup-and-viewer-manager/
 (youtube intro video link: http://youtu.be/EN-Z6jpDxlk )

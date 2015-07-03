@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 ; Perform the uninstall for USER
 #define MyAppName "MCMyVault"
-#define MyAppVersion "1.7.5.1"
+#define MyAppVersion "1.8.7.0"
 #define MyAppPublisher "JPSIII"
 #define MyAppExeName "MCMyVault.exe"
 
@@ -18,7 +18,7 @@ AppPublisher={#MyAppPublisher}
 ;DefaultDirName={pf}\{#MyAppName} ;before v1.5.1.9
 DefaultDirName={localappdata}\{#MyAppName}
 DefaultGroupName={#MyAppName}
-InfoBeforeFile=C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\ReadMe.txt
+InfoBeforeFile=C:\Users\Joe\Documents\GitHub\mcmyvault\MCMyVault\ReadMe.txt
 OutputBaseFilename=MCMyVaultsetup
 Compression=lzma
 SolidCompression=yes
@@ -33,9 +33,9 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\bin\Release\MCMyVault.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\bin\Release\Ionic.Zip.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\ReadMe.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Joe\Documents\GitHub\mcmyvault\MCMyVault\bin\Release\MCMyVault.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Joe\Documents\GitHub\mcmyvault\MCMyVault\bin\Release\Ionic.Zip.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Joe\Documents\GitHub\mcmyvault\MCMyVault\ReadMe.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\Joe\Documents\MCMyVault\*"; DestDir: "{userdocs}\{#MyAppName}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 

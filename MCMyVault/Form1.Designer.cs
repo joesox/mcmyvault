@@ -43,9 +43,12 @@ namespace MCMyVault
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.openBackupLocationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exploreBackuptexturpacksLocationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.exploreMinecraftSavedLocationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exploreMinecraftTexturepacksLocationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exploreMinecraftModFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.minecraftScreenshotLocationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.exploreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.configiniFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -140,10 +143,10 @@ namespace MCMyVault
             this.restoreSelectedBackupFileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.purgekeepXDaysForYToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sendCopyToCloudStorageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileLocationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteAllBackupsEXCEPTThisWorldToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteAllEMPTYToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openFileLocationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnMinecraft = new System.Windows.Forms.Button();
             this.contextMenuStripTP = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.backupToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -255,9 +258,12 @@ namespace MCMyVault
             this.toolStripSeparator7,
             this.openBackupLocationToolStripMenuItem,
             this.exploreBackuptexturpacksLocationToolStripMenuItem,
+            this.toolStripSeparator9,
             this.exploreMinecraftSavedLocationToolStripMenuItem,
             this.exploreMinecraftTexturepacksLocationsToolStripMenuItem,
             this.exploreMinecraftModFolderToolStripMenuItem,
+            this.minecraftScreenshotLocationToolStripMenuItem,
+            this.toolStripSeparator8,
             this.exploreToolStripMenuItem,
             this.toolStripSeparator2,
             this.configiniFileToolStripMenuItem,
@@ -270,7 +276,7 @@ namespace MCMyVault
             // 
             this.viewWorldUsingEihortToolStripMenuItem1.Image = global::MCMyVault.Properties.Resources.eihort;
             this.viewWorldUsingEihortToolStripMenuItem1.Name = "viewWorldUsingEihortToolStripMenuItem1";
-            this.viewWorldUsingEihortToolStripMenuItem1.Size = new System.Drawing.Size(286, 22);
+            this.viewWorldUsingEihortToolStripMenuItem1.Size = new System.Drawing.Size(245, 22);
             this.viewWorldUsingEihortToolStripMenuItem1.Text = "View world using eihort";
             this.viewWorldUsingEihortToolStripMenuItem1.Click += new System.EventHandler(this.viewWorldUsingEihortToolStripMenuItem1_Click);
             // 
@@ -278,73 +284,91 @@ namespace MCMyVault
             // 
             this.viewWorldUsingMcmapDZToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("viewWorldUsingMcmapDZToolStripMenuItem.Image")));
             this.viewWorldUsingMcmapDZToolStripMenuItem.Name = "viewWorldUsingMcmapDZToolStripMenuItem";
-            this.viewWorldUsingMcmapDZToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
+            this.viewWorldUsingMcmapDZToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
             this.viewWorldUsingMcmapDZToolStripMenuItem.Text = "View world using mcmap";
             this.viewWorldUsingMcmapDZToolStripMenuItem.Click += new System.EventHandler(this.viewWorldUsingMcmapDZToolStripMenuItem_Click);
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(283, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(242, 6);
             // 
             // openBackupLocationToolStripMenuItem
             // 
             this.openBackupLocationToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openBackupLocationToolStripMenuItem.Image")));
             this.openBackupLocationToolStripMenuItem.Name = "openBackupLocationToolStripMenuItem";
-            this.openBackupLocationToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
-            this.openBackupLocationToolStripMenuItem.Text = "Explore backup location";
+            this.openBackupLocationToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.openBackupLocationToolStripMenuItem.Text = "Backup location";
             this.openBackupLocationToolStripMenuItem.Click += new System.EventHandler(this.openBackupLocationToolStripMenuItem_Click);
             // 
             // exploreBackuptexturpacksLocationToolStripMenuItem
             // 
             this.exploreBackuptexturpacksLocationToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exploreBackuptexturpacksLocationToolStripMenuItem.Image")));
             this.exploreBackuptexturpacksLocationToolStripMenuItem.Name = "exploreBackuptexturpacksLocationToolStripMenuItem";
-            this.exploreBackuptexturpacksLocationToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
-            this.exploreBackuptexturpacksLocationToolStripMenuItem.Text = "Explore backup-texturepacks location";
+            this.exploreBackuptexturpacksLocationToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.exploreBackuptexturpacksLocationToolStripMenuItem.Text = "Backup-texturepacks location";
             this.exploreBackuptexturpacksLocationToolStripMenuItem.Click += new System.EventHandler(this.exploreBackuptexturpacksLocationToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(242, 6);
             // 
             // exploreMinecraftSavedLocationToolStripMenuItem
             // 
             this.exploreMinecraftSavedLocationToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exploreMinecraftSavedLocationToolStripMenuItem.Image")));
             this.exploreMinecraftSavedLocationToolStripMenuItem.Name = "exploreMinecraftSavedLocationToolStripMenuItem";
-            this.exploreMinecraftSavedLocationToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
-            this.exploreMinecraftSavedLocationToolStripMenuItem.Text = "Explore Minecraft saved location";
+            this.exploreMinecraftSavedLocationToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.exploreMinecraftSavedLocationToolStripMenuItem.Text = "Minecraft saved location";
             this.exploreMinecraftSavedLocationToolStripMenuItem.Click += new System.EventHandler(this.exploreMinecraftSavedLocationToolStripMenuItem_Click);
             // 
             // exploreMinecraftTexturepacksLocationsToolStripMenuItem
             // 
             this.exploreMinecraftTexturepacksLocationsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exploreMinecraftTexturepacksLocationsToolStripMenuItem.Image")));
             this.exploreMinecraftTexturepacksLocationsToolStripMenuItem.Name = "exploreMinecraftTexturepacksLocationsToolStripMenuItem";
-            this.exploreMinecraftTexturepacksLocationsToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
-            this.exploreMinecraftTexturepacksLocationsToolStripMenuItem.Text = "Explore Minecraft texturepacks locations";
+            this.exploreMinecraftTexturepacksLocationsToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.exploreMinecraftTexturepacksLocationsToolStripMenuItem.Text = "Minecraft texturepacks locations";
             this.exploreMinecraftTexturepacksLocationsToolStripMenuItem.Click += new System.EventHandler(this.exploreMinecraftTexturepacksLocationsToolStripMenuItem_Click);
             // 
             // exploreMinecraftModFolderToolStripMenuItem
             // 
             this.exploreMinecraftModFolderToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exploreMinecraftModFolderToolStripMenuItem.Image")));
             this.exploreMinecraftModFolderToolStripMenuItem.Name = "exploreMinecraftModFolderToolStripMenuItem";
-            this.exploreMinecraftModFolderToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
-            this.exploreMinecraftModFolderToolStripMenuItem.Text = "Explore Minecraft mod folder";
+            this.exploreMinecraftModFolderToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.exploreMinecraftModFolderToolStripMenuItem.Text = "Minecraft mod folder";
             this.exploreMinecraftModFolderToolStripMenuItem.Click += new System.EventHandler(this.exploreMinecraftModFolderToolStripMenuItem_Click);
+            // 
+            // minecraftScreenshotLocationToolStripMenuItem
+            // 
+            this.minecraftScreenshotLocationToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("minecraftScreenshotLocationToolStripMenuItem.Image")));
+            this.minecraftScreenshotLocationToolStripMenuItem.Name = "minecraftScreenshotLocationToolStripMenuItem";
+            this.minecraftScreenshotLocationToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.minecraftScreenshotLocationToolStripMenuItem.Text = "Minecraft Screenshot location";
+            this.minecraftScreenshotLocationToolStripMenuItem.Click += new System.EventHandler(this.minecraftScreenshotLocationToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(242, 6);
             // 
             // exploreToolStripMenuItem
             // 
             this.exploreToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exploreToolStripMenuItem.Image")));
             this.exploreToolStripMenuItem.Name = "exploreToolStripMenuItem";
-            this.exploreToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
-            this.exploreToolStripMenuItem.Text = "Explore cloud backup location";
+            this.exploreToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.exploreToolStripMenuItem.Text = "Backup Cloud location";
             this.exploreToolStripMenuItem.Click += new System.EventHandler(this.exploreToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(283, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(242, 6);
             // 
             // configiniFileToolStripMenuItem
             // 
             this.configiniFileToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("configiniFileToolStripMenuItem.Image")));
             this.configiniFileToolStripMenuItem.Name = "configiniFileToolStripMenuItem";
-            this.configiniFileToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
+            this.configiniFileToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
             this.configiniFileToolStripMenuItem.Text = "View current settings File";
             this.configiniFileToolStripMenuItem.Click += new System.EventHandler(this.configiniFileToolStripMenuItem_Click);
             // 
@@ -352,7 +376,7 @@ namespace MCMyVault
             // 
             this.logFileToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("logFileToolStripMenuItem.Image")));
             this.logFileToolStripMenuItem.Name = "logFileToolStripMenuItem";
-            this.logFileToolStripMenuItem.Size = new System.Drawing.Size(286, 22);
+            this.logFileToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
             this.logFileToolStripMenuItem.Text = "Log File";
             this.logFileToolStripMenuItem.Click += new System.EventHandler(this.logFileToolStripMenuItem_Click);
             // 
@@ -605,6 +629,7 @@ namespace MCMyVault
             this.listBoxBackups.Name = "listBoxBackups";
             this.listBoxBackups.Size = new System.Drawing.Size(516, 356);
             this.listBoxBackups.TabIndex = 0;
+            this.listBoxBackups.KeyDown += new System.Windows.Forms.KeyEventHandler(this.listBoxBackups_KeyDown);
             this.listBoxBackups.MouseDown += new System.Windows.Forms.MouseEventHandler(this.listBoxBackups_MouseDown);
             // 
             // tabPageCustoms
@@ -1318,7 +1343,7 @@ namespace MCMyVault
             this.deleteAllBackupsEXCEPTThisWorldToolStripMenuItem,
             this.deleteAllEMPTYToolStripMenuItem});
             this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(269, 224);
+            this.contextMenuStrip2.Size = new System.Drawing.Size(269, 202);
             // 
             // openSelectedBackupInEihortToolStripMenuItem
             // 
@@ -1360,6 +1385,14 @@ namespace MCMyVault
             this.sendCopyToCloudStorageToolStripMenuItem.Text = "Send copy to cloud storage";
             this.sendCopyToCloudStorageToolStripMenuItem.Click += new System.EventHandler(this.sendCopyToCloudStorageToolStripMenuItem_Click);
             // 
+            // openFileLocationToolStripMenuItem
+            // 
+            this.openFileLocationToolStripMenuItem.Image = global::MCMyVault.Properties.Resources.folder_open_16;
+            this.openFileLocationToolStripMenuItem.Name = "openFileLocationToolStripMenuItem";
+            this.openFileLocationToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
+            this.openFileLocationToolStripMenuItem.Text = "Open file location";
+            this.openFileLocationToolStripMenuItem.Click += new System.EventHandler(this.openFileLocationToolStripMenuItem_Click);
+            // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem.Image")));
@@ -1382,14 +1415,6 @@ namespace MCMyVault
             this.deleteAllEMPTYToolStripMenuItem.Name = "deleteAllEMPTYToolStripMenuItem";
             this.deleteAllEMPTYToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
             this.deleteAllEMPTYToolStripMenuItem.Text = "Delete all (EMPTY)";
-            // 
-            // openFileLocationToolStripMenuItem
-            // 
-            this.openFileLocationToolStripMenuItem.Image = global::MCMyVault.Properties.Resources.folder_open_16;
-            this.openFileLocationToolStripMenuItem.Name = "openFileLocationToolStripMenuItem";
-            this.openFileLocationToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
-            this.openFileLocationToolStripMenuItem.Text = "Open file location";
-            this.openFileLocationToolStripMenuItem.Click += new System.EventHandler(this.openFileLocationToolStripMenuItem_Click);
             // 
             // btnMinecraft
             // 
@@ -1666,6 +1691,9 @@ namespace MCMyVault
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem openContainingFolderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openFileLocationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem minecraftScreenshotLocationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
 
     }
 }

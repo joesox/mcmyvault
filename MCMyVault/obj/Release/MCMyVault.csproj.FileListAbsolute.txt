@@ -39,3 +39,17 @@ C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\obj\Relea
 C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\obj\Release\MCMyVault.NewProfileForm.resources
 C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\bin\Release\Ionic.Zip.dll
 C:\Users\Joe\Documents\Visual Studio 2012\Projects\MCMyVault\MCMyVault\obj\Release\MCMyVault.SettingschangeForm.resources
+C:\Users\Joe\Documents\GitHub\mcmyvault\MCMyVault\bin\Release\MCMyVault.exe.config
+C:\Users\Joe\Documents\GitHub\mcmyvault\MCMyVault\obj\Release\MCMyVault.exe
+C:\Users\Joe\Documents\GitHub\mcmyvault\MCMyVault\obj\Release\MCMyVault.pdb
+C:\Users\Joe\Documents\GitHub\mcmyvault\MCMyVault\bin\Release\MCMyVault.exe
+C:\Users\Joe\Documents\GitHub\mcmyvault\MCMyVault\bin\Release\MCMyVault.pdb
+C:\Users\Joe\Documents\GitHub\mcmyvault\MCMyVault\obj\Release\MCMyVault.csprojResolveAssemblyReference.cache
+C:\Users\Joe\Documents\GitHub\mcmyvault\MCMyVault\obj\Release\MCMyVault.AboutBox1.resources
+C:\Users\Joe\Documents\GitHub\mcmyvault\MCMyVault\obj\Release\MCMyVault.Form1.resources
+C:\Users\Joe\Documents\GitHub\mcmyvault\MCMyVault\obj\Release\MCMyVault.NewProfileForm.resources
+C:\Users\Joe\Documents\GitHub\mcmyvault\MCMyVault\obj\Release\MCMyVault.SectionEditorForm.resources
+C:\Users\Joe\Documents\GitHub\mcmyvault\MCMyVault\obj\Release\MCMyVault.Properties.Resources.resources
+C:\Users\Joe\Documents\GitHub\mcmyvault\MCMyVault\obj\Release\MCMyVault.RenameForm.resources
+C:\Users\Joe\Documents\GitHub\mcmyvault\MCMyVault\obj\Release\MCMyVault.SettingschangeForm.resources
+C:\Users\Joe\Documents\GitHub\mcmyvault\MCMyVault\obj\Release\MCMyVault.csproj.GenerateResource.Cache

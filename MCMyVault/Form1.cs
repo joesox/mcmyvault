@@ -1,13 +1,9 @@
-// MCMyVault v1.7.5.1
+// MCMyVault v1.8.7.0
 // by JPSIII
-// Copyright 2012-2014. All Rights Reserved
-//      * NEW FEATURE: [MyApps Tab] Added "Add an App..." browse to button.
-//      * NEW FEATURE: [Settings tab] Redesigned settings editor.
-//      * NEW FEATURE: [Snapshots tab] added "Open file location" right-click option.
-//      * NEW FEATURE: [Backups tab]   added "Open file location" right-click option.
-//      * BUG FIX: [Settings tab] Improved browsing out to settings files by increasing available folders.
-//      - BUG FIX: [Issue 27:] config page does not show sub-folders configs.
-//      * BUG FIX: Worked on increasing the startup speed of the application.
+// Copyright 2012-2015. All Rights Reserved
+//      * NEW FEATURE: [Backups tab] added Keys.Delete event
+//      - NEW FEATURE: [Issue 30:] Added View Screenshots folder from menu options
+//      - BUG FIXED:   [Issue 28:] Incorrect settings displayed on Settings tab after changing config ini files
 // To Do:
 //      - NEw FEATURE: [Issue 14:] Add feature to change eihort texture and maybe other features 
 // Limits: 
@@ -593,7 +589,7 @@ namespace MCMyVault
                 ReadColumnSettings();
 
                 //Need to make sure Settingsview is up to date.
-                UpdateSettingsView();
+                UpdateSettingsView(true);
 
                 //Just checkto see if  IsTextpack_WorldSameBackup()
                 IsTextpack_WorldSameBackup();
@@ -1011,6 +1007,27 @@ namespace MCMyVault
             }
         }
 
+        private void minecraftScreenshotLocationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string scrnshts_folder = Ini.GetKeyValue("settings", "minecraft_saved").Replace("\\saves", "\\screenshots");
+                //make sure it exists
+                if (Directory.Exists(scrnshts_folder))
+                {
+                    System.Diagnostics.Process.Start(scrnshts_folder);
+                }
+                else
+                    MessageBox.Show("There are no screenshots for this world yet.\r\n(Pressing F2 while playing Minecraft takes a screenshot)", "No screenshots taken", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+            }
+            catch (Exception ex)
+            {
+                Log(ex.Message);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private void deleteSelectedWorldFromMinecraftToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -1110,53 +1127,58 @@ namespace MCMyVault
             }
         }
 
+        private void DeleteBackupFile()
+        {
+            try
+            {
+                DialogResult dResult = MessageBox.Show("Are you sure you want to DELETE?", "DELETE BACKUP ", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+                if (dResult == DialogResult.Yes)
+                {
+                    DirectoryInfo backupDir = new DirectoryInfo(Ini.GetSection("settings").GetKey("backup_loc").GetValue());
+                    if (Directory.Exists(backupDir.FullName))
+                    {
+                        List<FileInfo> FilesList = new List<FileInfo>();
+                        foreach (FileInfo item in listBoxBackups.SelectedItems)
+                        {
+                            FilesList.Add(item);
+                        }
+
+                        foreach (FileInfo f in FilesList)
+                        {
+                            //File.Delete(f.FullName);
+                            FileSystem.DeleteFile(f.FullName, UIOption.OnlyErrorDialogs, RecycleOption.SendToRecycleBin);
+                            listBoxBackups.Items.Remove(f);
+                        }
+                        listBoxBackups.Update();
+                        ShowMsgBoxGenericCompleted("Deleted");
+                    }
+                    else
+                    {
+                        Log("deleteToolStripMenuItem_Click: could not find " + backupDir.FullName);
+                        MessageBox.Show("Sorry, could not find " + backupDir.FullName);
+                    }
+                }
+                else if (dResult == DialogResult.No)
+                {
+
+                }
+                else if (dResult == DialogResult.Cancel)
+                {
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Log(ex.Message);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
             {
-                try
-                {
-                    DialogResult dResult = MessageBox.Show("Are you sure you want to DELETE?", "DELETE BACKUP ", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
-                    if (dResult == DialogResult.Yes)
-                    {
-                        DirectoryInfo backupDir = new DirectoryInfo(Ini.GetSection("settings").GetKey("backup_loc").GetValue());
-                        if (Directory.Exists(backupDir.FullName))
-                        {
-                            List<FileInfo> FilesList = new List<FileInfo>();
-                            foreach (FileInfo item in listBoxBackups.SelectedItems)
-                            {
-                                FilesList.Add(item);
-                            }
-
-                            foreach (FileInfo f in FilesList)
-                            {
-                                //File.Delete(f.FullName);
-                                FileSystem.DeleteFile(f.FullName, UIOption.OnlyErrorDialogs, RecycleOption.SendToRecycleBin);
-                                listBoxBackups.Items.Remove(f);
-                            }
-                            listBoxBackups.Update();
-                            ShowMsgBoxGenericCompleted("Deleted");
-                        }
-                        else
-                        {
-                            Log("deleteToolStripMenuItem_Click: could not find " + backupDir.FullName);
-                            MessageBox.Show("Sorry, could not find " + backupDir.FullName);
-                        }
-                    }
-                    else if (dResult == DialogResult.No)
-                    {
-
-                    }
-                    else if (dResult == DialogResult.Cancel)
-                    {
-
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Log(ex.Message);
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                DeleteBackupFile();
             }
             catch (Exception ex)
             {
@@ -1616,8 +1638,7 @@ namespace MCMyVault
                         try
                         {
                             System.Diagnostics.Process.Start("https://code.google.com/p/mcmyvault/downloads/list");
-                            this.Close();
-                        }
+                                               }
                         catch (UriFormatException)
                         {
                             Console.WriteLine("Invalid URL");
@@ -3555,7 +3576,7 @@ namespace MCMyVault
         {
             try
             {
-                System.Diagnostics.Process.Start("http://mcmyvault.googlecode.com");
+                System.Diagnostics.Process.Start("https://github.com/joesox/mcmyvault/wiki");
             }
             catch (Exception ex)
             {
@@ -3831,7 +3852,7 @@ namespace MCMyVault
                 }
                 else
                 {
-                    //It does exist so update the new desired config!
+                    //It does exist so update the new desired config
                     Startupini.SetKeyValue("settings", "currentconfig", cboxProfiles.SelectedItem.ToString());
                 }
                 Startupini.Save(Common.StartupConfigIniFile);
@@ -4397,7 +4418,7 @@ namespace MCMyVault
                                 MessageBox.Show("NOTE: Settings are not saved yet. Remember to click Save button.", "Settings update", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                                 bSave.Enabled = true;
                                 //Need to make sure Settingsview is up to date.
-                                UpdateSettingsView();
+                                UpdateSettingsView(false);
                             }
                             else
                             {
@@ -4719,15 +4740,25 @@ namespace MCMyVault
             }
         }
 
-        private void UpdateSettingsView()
+        private void UpdateSettingsView(bool bForce)
         {
             try
             {
                 //don't do twice please...
-                if (dataGridViewSettings.Columns.Count <= 0)
+                if (dataGridViewSettings.Columns.Count <= 0 || bForce == true)
                 {
-                    dataGridViewSettings.Columns.Add("Settings", "Settings");
-                    dataGridViewSettings.Columns.Add("Value", "Value");
+                    //Delete existing rows
+                    if (dataGridViewSettings.Rows.Count >= 1)
+                    {
+                        dataGridViewSettings.Rows.Clear();
+                        dataGridViewSettings.Update();
+                    }
+                    else 
+                    {
+                        //there were NOT existing rows so lets do this
+                        dataGridViewSettings.Columns.Add("Settings", "Settings");
+                        dataGridViewSettings.Columns.Add("Value", "Value");
+                    }
 
                     // dataGridView1.Columns["ColumnMap"].Width = Convert.ToInt32(Ini.GetKeyValue("settings", "map_col_width"));
 
@@ -4778,6 +4809,15 @@ namespace MCMyVault
             {
                 Log(ex.Message);
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void listBoxBackups_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
+                DeleteBackupFile();
+                e.Handled = true;
             }
         }
 
